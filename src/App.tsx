@@ -1,10 +1,16 @@
+import Home from "./components/Home";
+import Sidebar from "./components/Sidebar";
+import WizardList from "./components/WizardList";
+
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center">
-        <div className="flex items-center h-screen">
-          <h1 className="text-8xl font-bold">Wizard Association</h1>
-        </div>
+      <div className="mx-auto w-full h-screen flex item-center">
+        <Sidebar />
+        <main className="w-3/4 bg-neutral-200">
+          <Home />
+          <WizardList />
+        </main>
       </div>
     </>
   );
